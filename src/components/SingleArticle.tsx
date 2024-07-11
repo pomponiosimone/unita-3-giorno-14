@@ -22,8 +22,8 @@ const SingleArticle: React.FC<SingleArticleProps> = ({ article }) => {
     const formattedDate = publishedDate.toLocaleDateString();
   return (
     <Col xs={12} md={3}>
-    <Card>
-      <Card.Img variant="top" src={article.image_url} />
+    <Card className="mt-5">
+      <Card.Img className="imgDimension" variant="top" src={article.image_url} />
       <Card.Body>
         <Card.Title className="text-truncate">{article.title}</Card.Title>
       

@@ -35,7 +35,7 @@ const listArticle = () => {
     <Container className="mt-5">
       <Row className="justify-content-center text-center">
         <Col xs={12} md={6}>
-          <h2>Articoli</h2>
+          <h2>Current Affairs Articles</h2>
         </Col>
       </Row>
       <Row className="justify-content-center">
