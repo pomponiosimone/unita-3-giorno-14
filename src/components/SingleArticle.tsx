@@ -16,12 +16,13 @@ interface SingleArticleProps {
 
 
 const SingleArticle: React.FC<SingleArticleProps> = ({ article }) => {
-    const publishedDate = new Date(article.published_at);
+    const data = new Date(article.published_at);
 
    
-    const formattedDate = publishedDate.toLocaleDateString();
+    const formatData = data.toLocaleDateString();
   return (
     <Col xs={12} md={3}>
+         
     <Card className="mt-5">
       <Card.Img className="imgDimension" variant="top" src={article.image_url} />
       <Card.Body>
@@ -29,7 +30,7 @@ const SingleArticle: React.FC<SingleArticleProps> = ({ article }) => {
       
         <Card.Text className="line-truncate-3">{article.summary}</Card.Text>
         <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
-        <p>{formattedDate}</p>
+        <p>{formatData}</p>
       </Card.Body>
     </Card>
     </Col>
